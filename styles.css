@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ADE8F4;
+    color: #03045E;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+
+    li {
+        list-style: none;
+        font-size: 1.5rem;
+
+        a {
+            text-decoration: none;
+            color: #03045E;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        li:hover {
+            color: #ffffff;
+        }
+    }
+}
