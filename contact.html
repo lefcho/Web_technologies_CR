@@ -45,6 +45,41 @@
         </form>
     </section>
     </main>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script>
+        const form = document.querySelector('.contact-form');
+        const toastContainer = document.getElementById('toastContainer');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const name = form.name.value.trim();
+            const email = form.email.value.trim();
+            const msg = form.message.value.trim();
+
+            const text = (name && email && msg)
+                ? 'Message sent!'
+                : 'Please fill the form';
+
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+
+            const icon = document.createElement('i');
+            icon.className = 'fa-solid fa-envelope';
+
+            toast.appendChild(icon);
+            toast.appendChild(document.createTextNode(text));
+
+            toastContainer.appendChild(toast);
+
+            if (name && email && msg) {
+                form.reset();
+            }
+        });
+    </script>
+
+
     <footer class="site-footer">
         <div class="container footer-inner">
             <div class="footer-info">
