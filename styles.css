@@ -13,7 +13,10 @@
 
 body {
     background: #5fafcf;
-background: linear-gradient(180deg, rgba(95, 175, 207, 1) 0%, rgba(132, 191, 178, 1) 30%, rgba(165, 194, 174, 1) 50%, rgba(134, 176, 123, 1) 68%, rgba(156, 179, 125, 1) 83%, rgba(194, 194, 171, 1) 100%);
+    background: linear-gradient(180deg, rgba(95, 175, 207, 1) 0%,
+            rgba(132, 191, 178, 1) 30%, rgba(165, 194, 174, 1) 50%,
+            rgba(134, 176, 123, 1) 68%, rgba(156, 179, 125, 1) 83%,
+            rgba(194, 194, 171, 1) 100%);
     color: var(--text-color);
     font-family: sans-serif;
 }
@@ -33,6 +36,17 @@ header {
     width: auto;
 }
 
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+
+    h1 {
+        color: rgb(20, 33, 33);
+    }
+}
 
 .navigation {
     display: flex;
@@ -60,7 +74,7 @@ header {
     gap: 0.5rem;
 }
 
-.hero-section {
+.hero-section, .contact-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,4 +128,33 @@ header {
 .hero-img {
     height: 600px;
     width: auto;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-info {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 550;
+}
+
+.footer-social {
+    font-size: 2rem;
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+        color: var(--link-hover-color);
+    }
 }
