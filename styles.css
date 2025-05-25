@@ -1,59 +1,117 @@
-
 :root {
-  --bg-color: #ADE8F4;
-  --text-color: #03045E;
-  --link-hover-color: #058a70;
+    --bg-color: hsl(190, 80%, 80%);
+    --text-color: hsl(239, 90%, 20%);
+    --secondary-color: hsl(240, 40%, 50%);
+    --link-hover-color: hsl(110, 90%, 30%);
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: sans-serif;
+    background: #5fafcf;
+background: linear-gradient(180deg, rgba(95, 175, 207, 1) 0%, rgba(132, 191, 178, 1) 30%, rgba(165, 194, 174, 1) 50%, rgba(134, 176, 123, 1) 68%, rgba(156, 179, 125, 1) 83%, rgba(194, 194, 171, 1) 100%);
+    color: var(--text-color);
+    font-family: sans-serif;
 }
 
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 10vh;
 }
 
 
 .logo {
-  height: 70px;
-  width: auto;
+    height: 70px;
+    width: auto;
 }
 
 
 .navigation {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .navigation li {
-  list-style: none;
-  font-size: 1.5rem;
+    list-style: none;
+    font-size: 1.5rem;
 }
 
 .navigation li a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: bold;
-  transition: color 0.3s;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 .navigation li a:hover {
-  color: var(--link-hover-color);
+    color: var(--link-hover-color);
 }
 
 .nav-item {
     display: flex;
     gap: 0.5rem;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+    padding: 3rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 15px;
+
+    .highlight {
+        color: var(--link-hover-color);
+    }
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.btn-primary {
+    background-color: var(--link-hover-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    &:hover {
+        background-color: var(--text-color);
+        transform: scale(1.05);
+    }
+}
+
+.hero-img {
+    height: 600px;
+    width: auto;
 }
