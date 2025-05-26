@@ -1,8 +1,8 @@
 @import url("vars.css");
 
 .about-section {
+    height: 90vh;
     padding: 4rem 1rem;
-    background-color: var(--bg-color);
     color: var(--text-color);
 }
 
