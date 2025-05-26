@@ -1,5 +1,13 @@
 @import url("vars.css");
 
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
 .about-section {
     height: 90vh;
     padding: 4rem 1rem;
@@ -12,17 +20,23 @@
     gap: 2rem;
     align-items: center;
     justify-content: center;
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: var(--text-color);
+    }
 }
 
 .about-text {
-    flex: 1 1 300px;
+    font-size: 1.3rem;    
     max-width: 600px;
 }
 
 .about-text p {
     margin-bottom: 1rem;
     line-height: 1.6;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .about-list {
@@ -36,12 +50,11 @@
 }
 
 .about-image {
-    flex: 1 1 250px;
     text-align: center;
 }
 
 .about-image img {
-    width: 100%;
+    padding: 1rem;
     max-width: 300px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
