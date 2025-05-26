@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="stylesheet" href="/styles/album.css" />
+  <title>My Work | PhotoMoto</title>
+</head>
+<body>
+  <header class="site-header">
+    <a href="/index.html" class="logo-link">
+      <img src="/images/Designer__2_-removebg-preview.png" alt="PhotoMoto logo" class="logo" />
+      <h1 class="site-title">PhotoMoto</h1>
+    </a>
+    <nav class="site-nav">
+      <ul class="navigation">
+        <li class="nav-item"><i class="fa-solid fa-house"></i><a href="/index.html">Home</a></li>
+        <li class="nav-item"><i class="fa-solid fa-circle-info"></i><a href="/about.html">About</a></li>
+        <li class="nav-item"><i class="fa-solid fa-user"></i><a href="/contact.html">Contact</a></li>
+        <li class="nav-item"><i class="fa-solid fa-images"></i><a href="/work.html">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <section class="gallery-section container">
+      <h2 class="section-title">My Work</h2>
+      <div class="gallery">
+        <img src="/images/images.jpg" alt="Photo 1" class="gallery-item" />
+        <img src="/images/images.jpg" alt="Photo 2" class="gallery-item" />
+        <img src="/images/images.jpg" alt="Photo 3" class="gallery-item" />
+        <img src="/images/images.jpg" alt="Photo 4" class="gallery-item" />
+        <img src="/images/images.jpg" alt="Photo 5" class="gallery-item" />
+        <img src="/images/images.jpg" alt="Photo 6" class="gallery-item" />
+        <img src="/images/images.jpg" alt="Photo 7" class="gallery-item" />
+        <img src="/images/images.jpg" alt="Photo 8" class="gallery-item" />
+        <img src="/images/images.jpg" alt="Photo 9" class="gallery-item" />
+        <img src="/images/images.jpg" alt="Photo 10" class="gallery-item" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-info">
+        <p>&copy; 2025 PhotoMoto. All rights reserved.</p>
+      </div>
+      <div class="footer-social">
+        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const items = document.querySelectorAll('.gallery-item');
+    const overlay = document.getElementById('overlay');
+    const overlayImage = document.getElementById('overlayImage');
+
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        overlayImage.src = item.src;
+        overlay.classList.add('active');
+      });
+    });
+
+    overlay.addEventListener('click', () => {
+      overlay.classList.remove('active');
+    });
+  </script>
+</body>
+</html>
