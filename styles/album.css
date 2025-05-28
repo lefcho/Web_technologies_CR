@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
 .section-title {
+    font-family: "Madimi One", sans-serif;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
@@ -20,12 +23,47 @@
 }
 
 .gallery-item {
-    overflow: hidden;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
-    width: 380px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
 
-    &:hover {
-        transform: scale(1.05);
-        transition: transform 0.3s ease;
-    }
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.overlay.front {
+    opacity: 1;
+    visibility: visible;
+}
+
+#overlayImage {
+    width: 900px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+#overlayImage:hover {
+    transform: scale(1.02);
 }

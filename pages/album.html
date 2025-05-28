@@ -71,12 +71,13 @@
         items.forEach(item => {
             item.addEventListener('click', () => {
                 overlayImage.src = item.src;
-                overlay.classList.add('active');
+                overlay.classList.add('front');
             });
         });
 
         overlay.addEventListener('click', () => {
-            overlay.classList.remove('active');
+            overlay.classList.remove('front');
+            overlayImage.src = '';
         });
     </script>
 </body>

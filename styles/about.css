@@ -1,7 +1,9 @@
 @import url("vars.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .section-title {
+    font-family: "Madimi One", sans-serif;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
@@ -29,11 +31,13 @@
 }
 
 .about-text {
-    font-size: 1.3rem;    
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
     max-width: 600px;
 }
 
 .about-text p {
+    font-family: "Roboto", sans-serif;
     margin-bottom: 1rem;
     line-height: 1.6;
     font-size: 1.3rem;
@@ -46,6 +50,7 @@
 }
 
 .about-list li {
+    font-family: "Roboto", sans-serif;
     margin-bottom: 0.5rem;
 }
 

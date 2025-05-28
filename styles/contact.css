@@ -1,4 +1,5 @@
 @import url("vars.css");
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 
 .contact-section {
     display: flex;
@@ -9,6 +10,7 @@
 }
 
 .section-title {
+    font-family: "Madimi One", sans-serif;
     font-size: 2.5rem;
     color: var(--text-color);
     margin-bottom: 1rem;
