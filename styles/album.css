@@ -1,0 +1,31 @@
+.section-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.site-main {
+    height: 90vh;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    width: 380px;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+}
